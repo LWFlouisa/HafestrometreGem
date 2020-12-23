@@ -22,7 +22,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Background
+Using this as a method of putting my commands on a single line, so LearnAnswer can properly use this system.
+
+### Training On A Language
+This uses the training model found in this repository: https://github.com/LWFlouisa/hafestrometre
+
+### Specific commands
+Takes you to the training prompt.
+~~~ruby
+require "Hafestrometre"
+
+Hafestrometre::Language.train
+~~~
+
+This classifies each word in the input stream.
+
+~~~ruby
+require "Hafestrometre"
+
+Hafestrometre::Language.classify
+~~~
 
 ## Development
 
